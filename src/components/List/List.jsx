@@ -13,22 +13,10 @@ import useStyles from './styles'
 import { Rating } from '@material-ui/lab'
 import PlaceDetails from '../PlaceDetails/PlaceDetails'
 
-const List = () => {
+const List = ({ places }) => {
 	const classes = useStyles()
 	const [type, setType] = useState('restaurants')
 	const [rating, setRating] = useState(0)
-
-	const places = [
-		{ name: 'Cool Place' },
-		{ name: 'Cool Play' },
-		{ name: 'Best Food' },
-		{ name: 'Cool Place' },
-		{ name: 'Cool Play' },
-		{ name: 'Best Food' },
-		{ name: 'Cool Place' },
-		{ name: 'Cool Play' },
-		{ name: 'Best Food' },
-	]
 
 	return (
 		<div className={classes.container}>
